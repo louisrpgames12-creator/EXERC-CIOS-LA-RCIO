@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()  {
+    float real, somatorio = 0;
+    int inteiro, i, j, divisor = 1;
+    
+    printf("ME INFORME UM NUMERO REAL E OUTRO INTEIRO: ");
+    scanf("%f%d", &real, &inteiro);
+    
+    for(i = 1; i <= inteiro; i++) {
+        
+        for(j = i; j >= 1; j-- ) {
+            
+        divisor *= j;
+        
+        }
+        
+        somatorio += real/(float)divisor;
+        divisor = 1;
+        
+    }
+    
+    printf("somatorio e: %.2f", somatorio);
+
+    return 0;
+}
