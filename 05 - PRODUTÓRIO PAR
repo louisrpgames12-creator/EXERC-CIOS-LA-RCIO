@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()  {
+    int positivos, produtorio = 1;
+    while(positivos != 0) {
+        do{
+            
+            printf("\nME INFORME UM NUMERO INTEIRO E POSITIVO: ");
+            scanf("%d", &positivos);
+            
+        }while(positivos < 0);
+        
+        if(positivos == 0)
+            break;
+        
+        if(positivos % 2 == 0) 
+            produtorio *= positivos;
+            
+        printf("SOMATORIO = %d", produtorio);       
+    }
+
+    return 0;
+}
